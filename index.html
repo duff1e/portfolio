@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Portfólio de Duffie</title>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <nav class="header-menu">
+                <a href="#home" class="header-menu-link" aria-label="Página inicial">Home</a>
+                <a href="#about" class="header-menu-link" aria-label="Descubra mais sobre mim">Sobre Mim</a>
+                <a href="#skills" class="header-menu-link" aria-label="Minhas habilidades e interesses">Skills e Interesses</a>
+                <a href="#courses" class="header-menu-link" aria-label="Cursos que participei">Formações e Cursos</a>
+                <a href="#projects" class="header-menu-link"onclick="toggleNavBar()" aria-label="Projetos que fiz">Projetos</a>
+                <a href="#contact" class="header-menu-link" aria-label="Entre em contato comigo">Contato</a>
+            </nav>
+            <div class="topnav">
+                <a href="#home" class="active"><p  class="nav-item" aria-label="Página inicial">Início</p></a>
+                <!-- Navigation links (hidden by default) -->
+                <ul id="navlinks">
+                    <li class="nav-item"><a href="#about" onclick="toggleNavBar()" aria-label="Descubra mais sobre mim">Sobre Mim</a></li>
+                    <li class="nav-item"><a href="#skills" onclick="toggleNavBar()" aria-label="Minhas habilidades e interesses">Skills & Interesses</a></li>
+                    <li class="nav-item"><a href="#courses" onclick="toggleNavBar()" aria-label="Cursos que participei">Formações & Cursos</a></li>
+                    <li class="nav-item"><a href="#projects" onclick="toggleNavBar()" aria-label="Projetos que fiz">Projetos</a></li>
+                    <li class="nav-item"><a href="#contact" onclick="toggleNavBar()" aria-label="Entre em contato comigo">Contato</a></li>
+                </ul>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="toggleNavBar()" aria-label="Menu de navegação">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </header>
+        
+        <main class="main">
+            <div class="intro" id="home">
+                <section class="intro-sections" id="intro-section-one">
+                    <img src="./assets/img/witch.jpg"
+                        alt="Arte de uma bruxa de chapéu com cabelos longos em um tema de cores magenta e azul ciano neon" id="intro-img-profile-query">
+                    <div class="intro-texts">
+                        <h1 id="intro-title">Que tal incrementar seu negócio com um site feito <span id="intro-highlight-title">com um toque de mágica de uma profissional de Front-end?</span></h1>
+
+                        <p id="intro-paragraph">Me chamo Duffie, sou uma bruxinha desenvolvedora Front-end com experiência em
+                        <span id="intro-highlight-p">HTML, CSS e JavaScript e outras tecnologias místicas</span>. Meu objetivo é criar
+                        funcionalidades mágicas para facilitar a vida do usuário. Vamos conversar?</p>
+                    </div>
+                    <div id="intro-links">
+                        <h2 class="intro-subtitle">Acesse minhas redes:</h2>
+                        <a href="https://github.com/duff1e" target="_blank" class="intro-link" aria-label="Acesse meu GitHub"><img src="./assets/img/github.png" alt="GitHub Logo">GitHub</a>
+                        
+                        <a href="https://www.instagram.com/jigglyduffie/" target="_blank" class="intro-link" aria-label="Acesse meu Instagram"><img src="./assets/img/instagram.png" alt="Instagram Logo">Instagram</a>
+                
+                        <img src="./assets/img/5746821.png" alt="Bola de cristal" id="intro-img-crystalball">
+                    </div>
+                </section>
+            
+                <section class="intro-sections" id="section-two">
+                    <img src="./assets/img/witch.jpg"
+                        alt="Arte de uma bruxa de chapéu com cabelos longos em um tema de cores magenta e azul ciano neon" id="intro-img-profile">
+                </section>
+            </div>
+            <section class="about">
+                <h2 class="about-title" id="about">Sobre mim</h2>
+                <div class="about-paragraphs">
+                <p>Como lifelong learner, meu objetivo é a busca por me aprimorar. Constantemente estudando, melhorando e aprendendo, em prol de trazer à vida soluções criativas e práticas.</p>
+                <img src="./assets/img/27314-removebg-preview copiar.png" alt="Uma lua crescente roxa num céu estrelado e com nuvens" id="about-img-moon">
+                <p>Com um background multidisciplinar, de olhar artístico e analítico, minhas contribuições como dev são uma garantia de uma perspectiva diferenciada.</p>
+                </div>
+            </section>            
+            <div class="skills-hobbies">
+                <section class="skills">
+                    <h2 class="skills-title" id="skills">Skills</h2>
+                    <div class="skills-line">
+                        <div class="skills-box">
+                            <ul class="skills-ul">
+                                <li class="skills-img">
+                                    <img src="./assets/img/html-5-svgrepo-com.svg" class="skills-imgs"alt="Logo HTML5"/>
+                                </li>
+                                <li class="skills-name">HTML 5</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skills-box">
+                            <ul class="skills-ul">
+                                <li class="skills-img">
+                                    <img src="./assets/img/css-3-svgrepo-com.svg" alt="" class="skills-imgs"alt="Logo CSS3">
+                                    <li class="skills-name">CSS</li>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="skills-box">
+                            <ul class="skills-ul">
+                                <li class="skills-img">
+                                    <img src="./assets/img/js-svgrepo-com.svg" alt="Logo JavaScript" class="skills-imgs"/>
+                                </li>
+                                <li class="skills-name">Javascript</li>
+                            </ul>
+                        </div>
+
+                        <div class="skills-box">
+                            <ul class="skills-ul">
+                                <li class="skills-img">
+                                    <img src="./assets/img/nodejs-svgrepo-com(1).svg" alt="Logo Node.js" class="skills-imgs"/>
+                                </li>
+                                <li class="skills-name">Node JS</li>
+                            </ul>
+                        </div>
+
+                        <div class="skills-box">
+                            <ul class="skills-ul">
+                                <li class="skills-img">
+                                    <img src="./assets/img/react-svgrepo-com.svg" alt="Logo React" class="skills-imgs"/>  
+                                </li>
+                                <li class="skills-name">React</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="hobbies">
+                    <h2 class="hobbies-title">Hobbies</h2>
+                    <div class="hobbies-line">
+                        <div class="hobbies-box">
+                            <ul class="hobbies-ul">
+                                <li class="hobbies-img"><img src="./assets/img/book-svgrepo-com.svg" class="hobbies-imgs" alt="Livro"></li>
+                                <li class="hobbies-name">Ler</li>
+                            </ul>
+                        </div>
+        
+                        <div class="hobbies-box">
+                            <ul class="hobbies-ul">
+                                <li class="hobbies-img"> <img src="./assets/img/palette-svgrepo-com.svg" alt="" class="hobbies-imgs" alt="Paleta de tintas para pintura"></li>
+                                <li class="hobbies-name">Desenhar</li>
+                            </ul>
+                        </div>
+        
+                        <div class="hobbies-box">
+                            <ul class="hobbies-ul">
+                                <li class="hobbies-img"> <img src="./assets/img/joystick-svgrepo-com.svg" alt="Controle de video-game" class="hobbies-imgs"></li>
+                                <li class="hobbies-name">Jogar</li>
+                            </ul>
+                        </div>
+        
+                        <div class="hobbies-box">
+                            <ul class="hobbies-ul">
+                                <li class="hobbies-img"><img src="./assets/img/tv-svgrepo-com.svg" alt="Televisão" class="hobbies-imgs"></li>
+                                <li class="hobbies-name">Assistir séries</li>
+                            </ul>
+                        </div>
+        
+                        <div class="hobbies-box">
+                            <ul class="hobbies-ul">
+                                <li class="hobbies-img"> <img src="./assets/img/pencil-svgrepo-com.svg" alt="Lápis" class="hobbies-imgs"> </li>
+                                <li class="hobbies-name">Escrever</li>
+                            </ul>
+                        </div>
+        
+                        <div class="hobbies-box">
+                            <ul class="hobbies-ul">
+                                <li class="hobbies-img"> <img src="./assets/img/code-square-svgrepo-com.svg" alt="Sinais de código HTML" class="hobbies-imgs"> </li>
+                                <li class="hobbies-name">Codar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="courses">                
+                <h2 class="courses-title" id="courses">Cursos</h2>
+                    <ul class="courses-details">
+                        <div class="courses-item">
+                            <li><img src="./assets/img/one.png" alt="Logo da Oracle Next Education" class="courses-imgs"></li>
+                            <li><h4>Formação Front-End</h4><p>Em andamento - Oracle Next Education</p></li>
+                        </div>
+                    </ul>
+                
+            </section>
+            <section class="projects">
+                <h2 class="projects-title" id="projects">Projetos</h2>
+                <div class="projects-box">
+                    <!-- Logo/captura do projeto/trabalho -->
+                    <img class="experience-img" src="./assets/img/challenge decodificador.jpg" alt="Demonstração do projeto">
+                    <div class="experience-info">
+                        <h3 class="experience-title">Jogo criado com HTML, CSS e JavaScript</h3>
+                        <h4 class="experience-text">Challenge Oracle </h4>
+                        <div class="experience-description">
+                                <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                            <span class="experience-repo"><a href="https://github.com/duff1e/challenge-decodificador-ONE" aria-label="Acesse o código do projeto Decodificador ONE" target="_blank"><button class="experiencia-botao--repo">Repositório</button></a></span>
+                            <span class="experience-demo"><a href="https://duff1e.github.io/challenge-decodificador-ONE/" aria-label="Demonstração do Projeto Decodificador ONE" target="_blank"><button class="experiencia-botao--demo">Ver demo</button></a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="contact">
+                <img src="./assets/img/luke-southern-k5o-cuu9E6g-unsplash.jpg" alt="Um telefone sobre um banco" class="contact-img">
+                <div class="contact-form">
+                    <div id="mensagem" class="hidden"></div>
+                    <h2 class="contact-title" id="contact">Contato</h2>
+                    <h3 class="formcontact-subtext">Quer entrar em contato comigo?</h3>
+                    <h4 class="formcontact-subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h4>
+                    <form class="formcontact-form" name="formulario" id="">
+                        <input class="formcontact-input" type="text" name="nome" id="nome" placeholder="Nome" minlength="2" maxlength="50" required>
+                        <input class="formcontact-input" type="email" name="email" id="email" placeholder="email@email.com" required>
+                        <input class="formcontact-input" type="text" name="assunto" id="assunto" placeholder="Assunto" minlength="2" maxlength="50" required>
+                        <textarea class="formcontact-textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" minlength="2" maxlength="300" required></textarea>
+                        <button class="formcontact-botao" type="submit">Enviar mensagem</button>
+                        <input type="hidden" name="_next" value="https://duff1e.github.io/portfolio/thank-you.html">
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <p class="footer-author">Desenvolvido por Duffie.
+                <br>duffieprofissional@gmail.com
+            </p>
+        </footer>
+        <script src="./assets/js/script.js"></script>
+    </body>
+
+</html>
