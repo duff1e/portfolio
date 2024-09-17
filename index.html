@@ -6,9 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./assets/css/style.css">
         <title>Portfólio de Duffie</title>
@@ -17,14 +14,17 @@
     <body>
 
         <header class="header">
-            <nav class="header-menu">
-                <a href="#home" class="header-menu-link" aria-label="Página inicial">Home</a>
-                <a href="#about" class="header-menu-link" aria-label="Descubra mais sobre mim">Sobre Mim</a>
-                <a href="#skills" class="header-menu-link" aria-label="Minhas habilidades e interesses">Skills e Interesses</a>
-                <a href="#courses" class="header-menu-link" aria-label="Cursos que participei">Formações e Cursos</a>
-                <a href="#projects" class="header-menu-link"onclick="toggleNavBar()" aria-label="Projetos que fiz">Projetos</a>
-                <a href="#contact" class="header-menu-link" aria-label="Entre em contato comigo">Contato</a>
-            </nav>
+            <div class="header-bar">
+                <p class="duffie-title">Duffie</p>
+                <nav class="header-menu">
+                    <a href="#home" class="header-menu-link" aria-label="Página inicial">Home</a>
+                    <a href="#about" class="header-menu-link" aria-label="Descubra mais sobre mim">Sobre Mim</a>
+                    <a href="#skills" class="header-menu-link" aria-label="Minhas habilidades e interesses">Skills e Interesses</a>
+                    <a href="#courses" class="header-menu-link" aria-label="Cursos que participei">Formações e Cursos</a>
+                    <a href="#projects" class="header-menu-link"onclick="toggleNavBar()" aria-label="Projetos que fiz">Projetos</a>
+                    <a href="#contact" class="header-menu-link" aria-label="Entre em contato comigo">Contato</a>
+                </nav>
+            </div>
             <div class="topnav">
                 <a href="#home" class="active"><p  class="nav-item" aria-label="Página inicial">Início</p></a>
                 <!-- Navigation links (hidden by default) -->
@@ -206,8 +206,8 @@
                 <div class="contact-form">
                     <div id="mensagem" class="hidden"></div>
                     <h2 class="contact-title" id="contact">Contato</h2>
-                    <h3 class="formcontact-subtext">Quer entrar em contato comigo?</h3>
-                    <h4 class="formcontact-subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h4>
+                    <p class="formcontact-subtext">Quer entrar em contato comigo?</p>
+                    <p class="formcontact-subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </p>
                     <form class="formcontact-form" name="formulario" id="">
                         <input class="formcontact-input" type="text" name="nome" id="nome" placeholder="Nome" minlength="2" maxlength="50" required>
                         <input class="formcontact-input" type="email" name="email" id="email" placeholder="email@email.com" required>
