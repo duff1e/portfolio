@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* Global Variables */
 :root {
     /* Colors */
@@ -6,8 +8,9 @@
     --second-hl-color: #E600FF;
     --third-hl-color: #EDF6FB;
     /* Fonts */
-    --main-font: 'Krona One', sans-serif;
-    --sec-font: 'Montserrat', sans-serif;
+    --title-font: 'Orbitron', sans-serif;
+    --main-font: 'Montserrat', sans-serif;
+    --sec-font: 'Roboto', sans-serif;
 }
 
 /* Global */
@@ -35,6 +38,10 @@ h2 {
     font-family: var(--main-font);
 }
 
+h2 {
+    font-size: 1.8rem;
+}
+
 h3,
 h4 {
     font-family: var(--sec-font);
@@ -42,6 +49,7 @@ h4 {
 
 p {
     font-family: var(--sec-font);
+    font-size: 1.2rem;
 }
 
 input:invalid, textarea:invalid {
@@ -68,12 +76,32 @@ button:disabled:hover {
     text-align: center;
 }
 
+.header-bar {
+    display: flex;
+    align-items: center;
+}
+
+.duffie-title {
+    margin: 0 10px 0 auto;
+    font-family: var(--title-font);
+    font-size: 2rem;
+    line-height: 2rem;
+    background: linear-gradient(90deg, var(--second-hl-color) 0%, var(--second-hl-color) 27%, var(--first-highlight-color) 76%, var(--first-highlight-color) 100%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-menu {
+    margin: auto;
+}
+
 .topnav {
     display: none;
 }
 
 .header-menu-link {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 5rem;
     padding: 2rem 2rem;
     text-decoration: none;
@@ -92,7 +120,6 @@ button:disabled:hover {
 .main {
     margin: 3% auto 0 auto;
     width: 50%;
-    /* background-color: #5e5e5e; */
 }
 
 /* Intro */
@@ -116,7 +143,7 @@ button:disabled:hover {
 #intro-title,
 #about-title {
     font-family: var(--main-font);
-    font-size: 1.43rem;
+    font-size: 2rem;
 }
 
 #intro-highlight-title,
@@ -128,7 +155,7 @@ button:disabled:hover {
 #intro-paragraph {
     margin: 2rem 0 4rem 0;
     font-family: var(--sec-font);
-    font-size: 1rem;
+    /* font-size: 1rem; */
     text-align: justify;
 }
 
@@ -147,7 +174,7 @@ button:disabled:hover {
 }
 
 .intro-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-family: var(--main-font);
     font-weight: 400;
 }
@@ -260,8 +287,12 @@ button:disabled:hover {
     margin-bottom: 10px;
 }
 
+.contact-title {
+    margin-top: 0;
+}
+
 .formcontact-subtext {
-    font-size: .9rem;
+    /* font-size: .9rem; */
     font-weight: 400;
     margin: 2px auto;
 }
@@ -425,6 +456,10 @@ button:disabled:hover {
     .header-menu {
         display: none;
     }
+    .duffie-title {
+        display: none;
+    }
+
     .topnav {
         display: block;
         overflow: hidden;
@@ -451,7 +486,7 @@ button:disabled:hover {
         right: 0;
         top: 0;
         border: 2px dotted black;
-        height: 16px;
+        height: 18px;
     }
     .topnav a:hover {
         background-color: var(--second-hl-color);
